@@ -36,6 +36,8 @@ public class adapterCard extends RecyclerView.Adapter<adapterCard.varViewHolder>
         ModelHotel hotel = dataHotel.get(position);
         holder.tvNama.setText(hotel.getNama());
         holder.tvTentang.setText(hotel.getTentang());
+
+
         Glide
                 .with(ctx)
                 .load(hotel.getFoto())
@@ -45,7 +47,7 @@ public class adapterCard extends RecyclerView.Adapter<adapterCard.varViewHolder>
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String xNama, xTentang, xFoto, xFoto1, xFoto2, xFoto3,xdetail;
+                String xNama, xTentang, xFoto, xFoto1, xFoto2, xFoto3,xDetail;
 
                 xNama = hotel.getNama();
                 xTentang = hotel.getTentang();
@@ -53,7 +55,7 @@ public class adapterCard extends RecyclerView.Adapter<adapterCard.varViewHolder>
                 xFoto1 = hotel.getFoto1();
                 xFoto2 = hotel.getFoto2();
                 xFoto3 = hotel.getFoto3();
-                xdetail= hotel.getDetail();
+                xDetail= hotel.getDetail();
 
 
 //                Log.d("CEKNRICEK", xNama+ " | " + xTentang + " | " + xFoto);
@@ -65,7 +67,7 @@ public class adapterCard extends RecyclerView.Adapter<adapterCard.varViewHolder>
                 kirim.putExtra("xFoto1", xFoto1);
                 kirim.putExtra("xFoto2", xFoto2);
                 kirim.putExtra("xFoto3", xFoto3);
-                kirim.putExtra("xDetail", xdetail);
+                kirim.putExtra("xDetail", xDetail);
                 ctx.startActivity(kirim);
             }
         });
@@ -86,6 +88,7 @@ public class adapterCard extends RecyclerView.Adapter<adapterCard.varViewHolder>
             ivFoto = itemView.findViewById(R.id.iv_foto);
             tvNama = itemView.findViewById(R.id.tv_nama);
             tvTentang = itemView.findViewById(R.id.tv_tentang);
+
         }
     }
 }

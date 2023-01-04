@@ -43,11 +43,12 @@ public class DetailActivity extends AppCompatActivity {
         yFoto1 = ambil.getStringExtra("xFoto1");
         yFoto2 = ambil.getStringExtra("xFoto2");
         yFoto3 = ambil.getStringExtra("xFoto3");
-        yDesc = ambil.getStringExtra("xdetail");
+        yDesc = ambil.getStringExtra("xDetail");
 
 
         tvNama.setText(yNama);
         tvTentang.setText(yTentang);
+        tvDesc.setText(yDesc);
 
         Glide
                 .with(DetailActivity.this)
