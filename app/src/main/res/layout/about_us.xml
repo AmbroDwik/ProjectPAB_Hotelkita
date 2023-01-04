@@ -39,6 +39,7 @@
             android:layout_marginLeft="6dp"
             android:ellipsize="end"
             android:maxLines="3"
+            android:textStyle="italic"
             />
 
         <TextView
@@ -63,12 +64,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/tv_quotes2"
-            android:text="- - - - -"
+            android:text="Never Gonna Give You Up"
             android:textSize="18sp"
             android:layout_below="@id/tv_npm2"
             android:layout_marginLeft="6dp"
             android:ellipsize="end"
             android:maxLines="3"
+            android:textStyle="italic"
             />
 
         <TextView
@@ -99,6 +101,7 @@
             android:layout_marginLeft="6dp"
             android:ellipsize="end"
             android:maxLines="3"
+            android:textStyle="italic"
             />
 
         <ImageView
