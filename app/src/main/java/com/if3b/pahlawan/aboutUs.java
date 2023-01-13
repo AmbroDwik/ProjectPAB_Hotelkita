@@ -12,7 +12,7 @@ public class aboutUs extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.about_us);
-        getSupportActionBar().setTitle("About Us");
+        getSupportActionBar().setTitle("Tentang Kita");
 
 //        tvNama
         tvNama1 = findViewById(R.id.tv_nama1);

@@ -40,6 +40,7 @@
             android:ellipsize="end"
             android:maxLines="3"
             android:textStyle="italic"
+            android:layout_marginBottom="5dp"
             />
 
         <TextView
